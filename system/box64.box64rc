@@ -462,6 +462,23 @@ BOX64_MAXCPU=64
 BOX64_DYNAREC_CALLRET=0 # prevent segfaulting
 
 #
+# Flash Player / Flash games
+# Fix black screen (force GLX extension presence) and text input issues
+#
+
+[flashplayer]
+BOX64_X11GLX=1 # force GLX extension presence (fix black screen on some systems)
+BOX64_DYNAREC_FASTROUND=0
+
+[FlashPlayer.exe]
+BOX64_X11GLX=1 # force GLX extension presence (fix black screen on some systems)
+BOX64_DYNAREC_FASTROUND=0
+
+[flashplayer.exe]
+BOX64_X11GLX=1 # force GLX extension presence (fix black screen on some systems)
+BOX64_DYNAREC_FASTROUND=0
+
+#
 # Wine process
 #
 
